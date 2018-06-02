@@ -1,5 +1,6 @@
 # SpellBlaze  - A million times faster spell correction
-[![Build Status](https://api.travis-ci.org/jpsingarayar/SpellBlaze.svg?branch=master)](https://travis-ci.org/jpsingarayar/SpellBlaze) 
+[![Build Status](https://api.travis-ci.org/jpsingarayar/SpellBlaze.svg?branch=master)](https://travis-ci.org/jpsingarayar/SpellBlaze)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 A [SymSpell](https://github.com/wolfgarbe/symspell) implementation for spelling correction & Fuzzy search. It's 1 million times faster through Symmetric Delete spelling correction algorithm
 
