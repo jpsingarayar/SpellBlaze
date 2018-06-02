@@ -34,6 +34,7 @@ SpellBlaze has these features added on top of the Symspell to provide more accur
 
 #### Running as a Packaged Application
 
+![Packaged Application](https://image.ibb.co/mY7vNd/carbon_1.png "Packaged")
 ```
 $ git clone git clone https://github.com/jpsingarayar/SpellBlaze.git
 
