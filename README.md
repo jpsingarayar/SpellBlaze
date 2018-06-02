@@ -30,4 +30,29 @@ SpellBlaze has these features added on top of the Symspell to provide more accur
 
 8. Works with multiple words, each word would get its own match with all the similarity scoring.
 
-### Similarity scoring
+### Installation
+
+#### Running as a Packaged Application
+
+git clone git clone https://github.com/jpsingarayar/SpellBlaze.git
+
+mvn clean install
+
+$ java -jar target/sc.jar
+
+
+
+#### Using the Maven Plugin
+
+git clone git clone https://github.com/jpsingarayar/SpellBlaze.git
+
+mvn clean install
+
+$ java -jar target/sc.jar
+
+mvn spring-boot:run
+
+http://localhost:8080/spellcheck/spellcheck?q=compatur&debug=true
+
+
+
