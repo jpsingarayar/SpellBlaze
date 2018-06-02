@@ -51,8 +51,66 @@ $ mvn clean install
 
 $ mvn spring-boot:run
 ```
+If run sucessful, the service would be up listening on port 8080.
 
-http://localhost:8080/spellcheck/spellcheck?q=compatur&debug=true
+Test the service by hitting the below url.
+
+http://localhost:8080/spellcheck/spellcheck?q=dissapear
+
+This should give the following response.
+```json
+{
+   "origPhrase": "dissapear",
+   "id": 2,
+   "correctedPhrase": "disappear",
+   "correctedWords": [
+      "disappear"
+   ],
+   "similarity": 0.779589683121326,
+   "similarityMap": {
+      "disappear": 0.779589683121326
+   },
+   "responseTime": 0,
+   "proximity": null,
+   "editDistanceMax": 2
+}
+```
+For a detailed similarity score between the orginal word and the matched word append a param debug=true to the end of the url.
+
+http://localhost:8080/spellcheck/spellcheck?q=dissapear&debug=true
+
+```json
+{
+   "origPhrase": "dissapear",
+   "id": 3,
+   "correctedPhrase": "disappear",
+   "correctedWords": [
+      "disappear"
+   ],
+   "similarity": 0.779589683121326,
+   "similarityMap": {
+      "disappear": 0.779589683121326
+   },
+   "responseTime": 1,
+   "proximity": [
+      {
+         "count": 45,
+         "distance": 1.44,
+         "wordFrequency": 0.0000178065989672964,
+         "editProximity": 0.28,
+         "phoneticProximity": 1,
+         "fragmentProximity": 0.875,
+         "prefixProximity": 0.9481481313705444,
+         "proximity": 0.779589683121326,
+         "term": "disappear"
+      }
+   ],
+   "editDistanceMax": 2
+}
+```
+
+
+
 
 
 
