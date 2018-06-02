@@ -108,6 +108,13 @@ http://localhost:8080/spellcheck/spellcheck?q=dissapear&debug=true
    "editDistanceMax": 2
 }
 ```
+### Contributing to this project
+
+There are lot of scope for imporvement and I would gladly welcome contributors to this projects. 
+
+1. Create a feature branch and commit your changes.
+2. Submit a merge request.
+3. Each and every commit that makes a difference to the project would get a perk :).
 
 
 
