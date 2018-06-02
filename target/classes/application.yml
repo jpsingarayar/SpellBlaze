@@ -1,0 +1,43 @@
+server:
+  port: 8080
+  context-path: /${spring.application.name}
+
+
+spring:
+  application:
+    name: spellcheck
+  output:
+    ansi:
+      enabled: ALWAYS
+  cloud:
+    config:
+      allow-override: true
+      override-none: false
+      fail-fast: true
+      override-system-properties: false
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
+
+
+service:
+  resources.dir: src/main/resources/
+  brandFileName: brands.txt
+  sampleCorpusFile: big.txt
+  tradeMarkFile: trademarks.txt
+
+  brandServiceURL: http://solrx328p.dev.ch3.s.com:8780/qp/brands
+
+  editDistanceMax: 2
+  topK: 6
+
+  deletionWeight: 0.8
+  insertionWeight: 1.01
+  replaceWeight: 0.9
+  transpositionWeight: 0.8
+
+  editWeight: 1.2
+  phoneWeight: 1
+  prefixWeight: 1.4
+  fragmentWeight: 1.5
+  wordFrequencyWeight: 0
