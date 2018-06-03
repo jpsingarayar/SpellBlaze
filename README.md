@@ -35,7 +35,7 @@ SpellBlaze has these features added on top of the Symspell to provide more accur
 #### Running as a Packaged Application
 
 ```
-$ git clone git clone https://github.com/jpsingarayar/SpellBlaze.git
+$ git clone https://github.com/jpsingarayar/SpellBlaze.git
 
 $ mvn clean install
 
@@ -45,7 +45,7 @@ $ java -jar target/sc.jar
 #### Using the Maven Plugin
 
 ```
-$ git clone git clone https://github.com/jpsingarayar/SpellBlaze.git
+$ git clone https://github.com/jpsingarayar/SpellBlaze.git
 
 $ mvn clean install
 
