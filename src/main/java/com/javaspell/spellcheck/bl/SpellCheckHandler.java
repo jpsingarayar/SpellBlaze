@@ -20,7 +20,6 @@ SpellCheckService spellCheckService;
 @Timed
 @ExceptionMetered
 @HystrixCommand(groupKey = "hystrixGroup", commandKey = "helloCommandKey", threadPoolKey = "helloThreadPoolKey", fallbackMethod = "fallbackHello")
-@Cacheable(cacheNames = "default", key = "T(com.shc.services.sc.util.MiscUtil).getCacheKey(#request)", condition = "T(com.shc.services.sc.util.MiscUtil).isCacheOverride(#request) == false", unless = "#result == null")
 public ServiceResponse spellCorrect(SpellCheckRequest request) {
     System.out.println("Inside getHello");
     return spellCheckService.getCorrectedWord(request);
